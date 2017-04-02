@@ -12,7 +12,41 @@
 		3DB8FD8C1E88D20D00C567BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB8FD8A1E88D20D00C567BE /* Main.storyboard */; };
 		3DB8FD8E1E88D20D00C567BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB8FD8D1E88D20D00C567BE /* Assets.xcassets */; };
 		3DB8FD911E88D20D00C567BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB8FD8F1E88D20D00C567BE /* LaunchScreen.storyboard */; };
+		3DB8FDA21E88D82800C567BE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB8FDA01E88D82800C567BE /* MainInterface.storyboard */; };
+		3DB8FDA61E88D82800C567BE /* Share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3DB8FD9C1E88D82700C567BE /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3DB8FDB41E89283500C567BE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8FDB31E89283500C567BE /* Model.swift */; };
+		3DF9F0A51E8CD2AA00FED6E4 /* ShareSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9F0A41E8CD2AA00FED6E4 /* ShareSelectViewController.swift */; };
+		3DF9F0A71E8CD77E00FED6E4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9F0A61E8CD77E00FED6E4 /* Location.swift */; };
+		3DF9F0A91E8CEC0100FED6E4 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9F0A81E8CEC0100FED6E4 /* ShareViewController.swift */; };
+		3DF9F0AB1E8CEC9A00FED6E4 /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9F0AA1E8CEC9A00FED6E4 /* TeamTableViewController.swift */; };
+		3DF9F0AE1E8D250900FED6E4 /* Pods_PhotoMojo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E0AD9E557BAD241313666B /* Pods_PhotoMojo.framework */; };
+		3DF9F0B41E8D80AB00FED6E4 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9F0B31E8D80AB00FED6E4 /* LocationViewController.swift */; };
+		B762CE55CBEE4874CD220DF4 /* Pods_Share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15DCA995A8579A35264B321 /* Pods_Share.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DB8FDA41E88D82800C567BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DB8FD7B1E88D20C00C567BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB8FD9B1E88D82700C567BE;
+			remoteInfo = Share;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DB8FDAA1E88D82800C567BE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3DB8FDA61E88D82800C567BE /* Share.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3DB8FD831E88D20D00C567BE /* PhotoMojo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoMojo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +56,23 @@
 		3DB8FD8D1E88D20D00C567BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DB8FD901E88D20D00C567BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DB8FD921E88D20D00C567BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB8FD9C1E88D82700C567BE /* Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB8FDA11E88D82800C567BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3DB8FDA31E88D82800C567BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB8FDAB1E88D85100C567BE /* Share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Share.entitlements; sourceTree = "<group>"; };
+		3DB8FDAC1E88D9FA00C567BE /* PhotoMojo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoMojo.entitlements; sourceTree = "<group>"; };
+		3DB8FDB31E89283500C567BE /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../PhotoMojo/Model.swift; sourceTree = "<group>"; };
+		3DF9F0A41E8CD2AA00FED6E4 /* ShareSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareSelectViewController.swift; sourceTree = "<group>"; };
+		3DF9F0A61E8CD77E00FED6E4 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3DF9F0A81E8CEC0100FED6E4 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		3DF9F0AA1E8CEC9A00FED6E4 /* TeamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
+		3DF9F0B31E8D80AB00FED6E4 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		44B823BB0F531B1DCD67900C /* Pods-Share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Share.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Share/Pods-Share.debug.xcconfig"; sourceTree = "<group>"; };
+		95E0AD9E557BAD241313666B /* Pods_PhotoMojo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoMojo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A5D1A25F30F161DFEEBF696 /* Pods-Share.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Share.release.xcconfig"; path = "Pods/Target Support Files/Pods-Share/Pods-Share.release.xcconfig"; sourceTree = "<group>"; };
+		DB1DF137878C3F6ABA42A7CC /* Pods-PhotoMojo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMojo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoMojo/Pods-PhotoMojo.release.xcconfig"; sourceTree = "<group>"; };
+		DBBE773AFF17CBC3C9F2CA6C /* Pods-PhotoMojo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMojo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoMojo/Pods-PhotoMojo.debug.xcconfig"; sourceTree = "<group>"; };
+		E15DCA995A8579A35264B321 /* Pods_Share.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Share.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +80,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF9F0AE1E8D250900FED6E4 /* Pods_PhotoMojo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB8FD991E88D82700C567BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B762CE55CBEE4874CD220DF4 /* Pods_Share.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				3DB8FD851E88D20D00C567BE /* PhotoMojo */,
+				3DB8FD9D1E88D82700C567BE /* Share */,
 				3DB8FD841E88D20D00C567BE /* Products */,
+				CD2E91017365E2EE2C36CDE1 /* Pods */,
+				79B048BB0E38638A475B3142 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				3DB8FD831E88D20D00C567BE /* PhotoMojo.app */,
+				3DB8FD9C1E88D82700C567BE /* Share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +118,7 @@
 		3DB8FD851E88D20D00C567BE /* PhotoMojo */ = {
 			isa = PBXGroup;
 			children = (
+				3DB8FDAC1E88D9FA00C567BE /* PhotoMojo.entitlements */,
 				3DB8FD861E88D20D00C567BE /* AppDelegate.swift */,
 				3DB8FD881E88D20D00C567BE /* ViewController.swift */,
 				3DB8FD8A1E88D20D00C567BE /* Main.storyboard */,
@@ -64,6 +129,42 @@
 			path = PhotoMojo;
 			sourceTree = "<group>";
 		};
+		3DB8FD9D1E88D82700C567BE /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				3DB8FDB31E89283500C567BE /* Model.swift */,
+				3DB8FDAB1E88D85100C567BE /* Share.entitlements */,
+				3DB8FDA01E88D82800C567BE /* MainInterface.storyboard */,
+				3DB8FDA31E88D82800C567BE /* Info.plist */,
+				3DF9F0A41E8CD2AA00FED6E4 /* ShareSelectViewController.swift */,
+				3DF9F0A81E8CEC0100FED6E4 /* ShareViewController.swift */,
+				3DF9F0A61E8CD77E00FED6E4 /* Location.swift */,
+				3DF9F0AA1E8CEC9A00FED6E4 /* TeamTableViewController.swift */,
+				3DF9F0B31E8D80AB00FED6E4 /* LocationViewController.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		79B048BB0E38638A475B3142 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95E0AD9E557BAD241313666B /* Pods_PhotoMojo.framework */,
+				E15DCA995A8579A35264B321 /* Pods_Share.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD2E91017365E2EE2C36CDE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBBE773AFF17CBC3C9F2CA6C /* Pods-PhotoMojo.debug.xcconfig */,
+				DB1DF137878C3F6ABA42A7CC /* Pods-PhotoMojo.release.xcconfig */,
+				44B823BB0F531B1DCD67900C /* Pods-Share.debug.xcconfig */,
+				9A5D1A25F30F161DFEEBF696 /* Pods-Share.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,18 +172,43 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DB8FD951E88D20D00C567BE /* Build configuration list for PBXNativeTarget "PhotoMojo" */;
 			buildPhases = (
+				3F0ECC86639F439D04DA2025 /* [CP] Check Pods Manifest.lock */,
 				3DB8FD7F1E88D20D00C567BE /* Sources */,
 				3DB8FD801E88D20D00C567BE /* Frameworks */,
 				3DB8FD811E88D20D00C567BE /* Resources */,
+				3DB8FDAA1E88D82800C567BE /* Embed App Extensions */,
+				AA96A383F68E0EDDD026289C /* [CP] Embed Pods Frameworks */,
+				B7C932175079D5F1EB8B07A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3DB8FDA51E88D82800C567BE /* PBXTargetDependency */,
 			);
 			name = PhotoMojo;
 			productName = PhotoMojo;
 			productReference = 3DB8FD831E88D20D00C567BE /* PhotoMojo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3DB8FD9B1E88D82700C567BE /* Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB8FDA71E88D82800C567BE /* Build configuration list for PBXNativeTarget "Share" */;
+			buildPhases = (
+				0F31C957EB6352FC24B723B4 /* [CP] Check Pods Manifest.lock */,
+				3DB8FD981E88D82700C567BE /* Sources */,
+				3DB8FD991E88D82700C567BE /* Frameworks */,
+				3DB8FD9A1E88D82700C567BE /* Resources */,
+				A66224DB1C20C22EB8022EA9 /* [CP] Embed Pods Frameworks */,
+				EE421FE988D907931879E901 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Share;
+			productName = Share;
+			productReference = 3DB8FD9C1E88D82700C567BE /* Share.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,7 +222,25 @@
 				TargetAttributes = {
 					3DB8FD821E88D20D00C567BE = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QY8PV2R65U;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					3DB8FD9B1E88D82700C567BE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QY8PV2R65U;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -114,6 +258,7 @@
 			projectRoot = "";
 			targets = (
 				3DB8FD821E88D20D00C567BE /* PhotoMojo */,
+				3DB8FD9B1E88D82700C567BE /* Share */,
 			);
 		};
 /* End PBXProject section */
@@ -129,19 +274,141 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DB8FD9A1E88D82700C567BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB8FDA21E88D82800C567BE /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F31C957EB6352FC24B723B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F0ECC86639F439D04DA2025 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A66224DB1C20C22EB8022EA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Share/Pods-Share-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA96A383F68E0EDDD026289C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoMojo/Pods-PhotoMojo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7C932175079D5F1EB8B07A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoMojo/Pods-PhotoMojo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE421FE988D907931879E901 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Share/Pods-Share-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DB8FD7F1E88D20D00C567BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB8FDB41E89283500C567BE /* Model.swift in Sources */,
 				3DB8FD891E88D20D00C567BE /* ViewController.swift in Sources */,
 				3DB8FD871E88D20D00C567BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DB8FD981E88D82700C567BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF9F0B41E8D80AB00FED6E4 /* LocationViewController.swift in Sources */,
+				3DF9F0A51E8CD2AA00FED6E4 /* ShareSelectViewController.swift in Sources */,
+				3DF9F0A71E8CD77E00FED6E4 /* Location.swift in Sources */,
+				3DF9F0A91E8CEC0100FED6E4 /* ShareViewController.swift in Sources */,
+				3DF9F0AB1E8CEC9A00FED6E4 /* TeamTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DB8FDA51E88D82800C567BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DB8FD9B1E88D82700C567BE /* Share */;
+			targetProxy = 3DB8FDA41E88D82800C567BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3DB8FD8A1E88D20D00C567BE /* Main.storyboard */ = {
@@ -158,6 +425,14 @@
 				3DB8FD901E88D20D00C567BE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3DB8FDA01E88D82800C567BE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB8FDA11E88D82800C567BE /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -256,11 +531,15 @@
 		};
 		3DB8FD961E88D20D00C567BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBBE773AFF17CBC3C9F2CA6C /* Pods-PhotoMojo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhotoMojo/PhotoMojo.entitlements;
+				DEVELOPMENT_TEAM = QY8PV2R65U;
 				INFOPLIST_FILE = PhotoMojo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDeveloper.PhotoMojo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sanjay.PhotoMojo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -268,12 +547,48 @@
 		};
 		3DB8FD971E88D20D00C567BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1DF137878C3F6ABA42A7CC /* Pods-PhotoMojo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhotoMojo/PhotoMojo.entitlements;
+				DEVELOPMENT_TEAM = QY8PV2R65U;
 				INFOPLIST_FILE = PhotoMojo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDeveloper.PhotoMojo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sanjay.PhotoMojo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3DB8FDA81E88D82800C567BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44B823BB0F531B1DCD67900C /* Pods-Share.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Share/Share.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QY8PV2R65U;
+				INFOPLIST_FILE = Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sanjay.PhotoMojo.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3DB8FDA91E88D82800C567BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A5D1A25F30F161DFEEBF696 /* Pods-Share.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Share/Share.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QY8PV2R65U;
+				INFOPLIST_FILE = Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sanjay.PhotoMojo.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -297,6 +612,16 @@
 				3DB8FD971E88D20D00C567BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB8FDA71E88D82800C567BE /* Build configuration list for PBXNativeTarget "Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB8FDA81E88D82800C567BE /* Debug */,
+				3DB8FDA91E88D82800C567BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
